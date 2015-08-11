@@ -1,8 +1,8 @@
 { "ui" : [
 	{
 		"type" : "KTWidget",
-		"location" : { "x" : 125, "y" : 0, "z" : 0 },
-		"size" : { "width" : 1000, "height" : 650 },
+		"location" : { "x" : 105, "y" : 0, "z" : 0 },
+		"size" : { "width" : 1000, "height" : 670 },
 		"external" : "http://kirsten398.github.io/kurt/mainscreen.html"
 	},
 	{
@@ -28,7 +28,7 @@
 	{
 		"type" : "KTScrollView",
 		"location" : { "x" : 0, "y" : 80, "z" : 3 },
-		"size" : { "width" : 100, "height" : 550 },
+		"size" : { "width" : 100, "height" : 590 },
 		"panelsize" : { "width" : 200, "height" : 60000 },
 		"scrollable" : { "horizontal" : false, "vertical" : true },
 		"children" : [
@@ -45,5 +45,32 @@
 				"size" : { "width" : 100, "height" : 100 }
 			}
 		]
+	},
+	{
+		"type" : "KTPanel",
+		"location" : { "x" : 1334, "y" : 0, "z" : 0 },
+		"size" : { "width" : 200 , "height" : 80 },
+		"id" : "SearchPanel",
+		"children" : [
+			{
+				"type" : "KTLabel",
+				"location" : { "x" : 30, "y" : 5, "z" : 0 },
+				"size" : { "width" : 200, "height" : 50 },
+				"id" : "Search"
+			},
+			{
+				"type" : "KTInputField",
+				"location" : { "x" : 0, "y" : 50, "z" : 0 },
+				"size" : { "width" : 200, "height" : 30 },
+				"id" : "globalsearch"
+			}
+		]
+	},
+	{
+		"type" : "KTScrollView",
+		"location" : { "x" : 0, "y" : 80, "z" : 3 },
+		"size" : { "width" : 100, "height" : 590 },
+		"panelsize" : { "width" : 200, "height" : 60000 },
+		"scrollable" : { "horizontal" : false, "vertical" : true }
 	}
 }
