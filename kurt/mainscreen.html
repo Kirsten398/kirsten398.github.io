@@ -7,5 +7,77 @@
 			"id" : "Welcome!",
 			
 		}
-	]
+	],
+	"children" : [
+		{
+		  "type": "KTPanel",
+		  "location": { "x": 0, "y": 0, "z": 0 },
+		  "size": { "width": 100, "height": 80 },
+		  "id": "RosterPanel",
+		  "children": [
+			{
+			  "type": "KTLabel",
+			  "location": { "x": 10, "y": 5, "z": 0 },
+			  "size": { "width": 100, "height": 50 },
+			  "id": "Guild Roster"
+			},
+			{
+			  "type": "KTInputField",
+			  "location": { "x": 0, "y": 50, "z": 3 },
+			  "size": { "width": 100, "height": 30 },
+			  "id": "RosterSearch"
+			}
+		  ]
+		},
+		{
+		  "type": "KTScrollView", 
+		  "location": { "x": 0, "y": 80, "z": 3 },
+		  "size": { "width": 100, "height": 590 },
+		  "panelsize": { "width": 200, "height": 60000 },
+		  "scrollable": { "horizontal": false, "vertical": true },
+		  "children": [
+			{
+			  "type": "KTButton",
+			  "id": "Roland",
+			  "location": { "x": 0, "y": 0, "z": 3 },
+			  "size": { "width": 100, "height": 100 },
+			  "color": "red"
+			},
+			{
+			  "type": "KTButton",
+			  "id": "Sarah",
+			  "location": { "x": 0, "y": 100, "z": 3 },
+			  "size": { "width": 100, "height": 100 },
+			  "color": { "r": 0, "g": 0, "b": 1, "a": 1 }
+			}
+		  ]
+		},
+		{
+		  "type": "KTPanel",
+		  "location": { "x": 1334, "y": 0, "z": 0 },
+		  "size": { "width": 200, "height": 80 },
+		  "id": "SearchPanel",
+		  "children": [
+			{
+			  "type": "KTLabel",
+			  "location": { "x": 30, "y": 5, "z": 0 },
+			  "size": { "width": 200, "height": 50 },
+			  "id": "Search"
+			},
+			{
+			  "type": "KTInputField",
+			  "location": { "x": 0, "y": 50, "z": 0 },
+			  "size": { "width": 200, "height": 30 },
+			  "id": "globalsearch"
+			}
+		  ]
+		},
+		{
+		  "type": "KTScrollView",
+		  "location": { "x": 1334, "y": 80, "z": 3 },
+		  "size": { "width": 200, "height": 590 },
+		  "panelsize": { "width": 200, "height": 60000 },
+		  "scrollable": { "horizontal": false, "vertical": true }
+		}
+	  ]
 }
